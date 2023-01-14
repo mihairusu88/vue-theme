@@ -1,0 +1,68 @@
+// Colors
+$primary: #019EBF;
+$secondary: #0CCDA3;
+$tertiary: #223263;
+$grey: #9098B1;
+$grey-light: #DFE4F1;
+$black: #000000;
+$white: #FFFFFF;
+$body: #F3F3F4;
+
+// Font weights
+$weight-light: 300;
+$weight-normal: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-black: 800;
+
+// Font family
+$family-sans-serif: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+// sizes
+$size-1: 48px;
+$size-2: 40px;
+$size-3: 32px;
+$size-4: 24px;
+$size-5: 20px;
+$size-6: 16px;
+$size-7: 12px;
+
+// spacing
+$spacing-values: (
+    "0": 0,
+    "1": 2px,
+    "2": 4px,
+    "3": 8px,
+    "4": 12px,
+    "5": 14px,
+    "6": 16px,
+    "7": 18px,
+    "8": 20px,
+    "9": 22px,
+    "10": 24px,
+    "11": 26px,
+    "12": 28px,
+    "13": 30px,
+    "14": 32px,
+    "15": 34px,
+    "16": 36px,
+    "17": 38px,
+    "18": 40px,
+    "19": 42px,
+    "20": 44px,
+    "auto": auto
+);
+
+// easing
+$easing: ease-in-out;
+
+// radius
+$radius-large: 15px;
+
+// mixins
+@mixin box-shadow( $color ) {
+    box-shadow: 0 4px 4px rgba( $color, 0.2 ) !important;
+}
+
+@import "@nodeModules/bulma/bulma.sass";

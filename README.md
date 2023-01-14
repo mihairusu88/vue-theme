@@ -1,4 +1,6 @@
-# tricker
+# Vue3 Theme
+
+> Create a vue3 theme using router and bulma css.
 
 ## Project setup
 ```
@@ -17,7 +19,7 @@ yarn build
 
 ### Preview for production
 ```
-yarn build
+yarn preview
 ```
 
 ### Lints and fixes files
@@ -27,3 +29,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://vitejs.dev/config/).
+### Check live demo
+
+[Live Demo](https://63c2b763035bd306da716589--fancy-khapse-1ac560.netlify.app/)
