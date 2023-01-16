@@ -31,4 +31,4 @@ yarn lint
 See [Configuration Reference](https://vitejs.dev/config/).
 ### Check live demo
 
-[Live Demo](https://63c2b763035bd306da716589--fancy-khapse-1ac560.netlify.app/)
+[Live Demo](https://master--fancy-khapse-1ac560.netlify.app/)
