@@ -4,7 +4,7 @@
             Products
         </h5>
         <div class="container">
-            <div class="columns is-flex is-flex-wrap-wrap is-justify-content-space-between width-100">
+            <div class="columns mb-5 is-flex is-flex-wrap-wrap is-justify-content-space-between width-100">
                 <div v-for="(product, index) in products" :key="index" class="column is-one-third">
                     <ProductCardVariant1
                         :item="product" />

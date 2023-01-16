@@ -1,64 +1,44 @@
 <template>
-    <div class="is-flex is-flex-direction-column is-align-items-center">
-        <h5 class="is-size-5 has-text-weight-bold has-text-centered mt-16 has-text-tertiary">
-            Welcome Home
-        </h5>
-        <div class="is-flex is-justify-content-space-between mt-16">
-            <BaseCard class="is-flex p-15 mx-4">
-                <BaseButton
-                    class="mx-3"
-                    color="primary"
-                    size="medium"
-                    rounded
-                    font-weight="medium"
-                    @click="() => $router.push({ name: 'TheLogin' })">
-                    Login
-                </BaseButton>
-            </BaseCard>
-            <BaseCard class="is-flex p-15 mx-4">
-                <BaseButton
-                    class="mx-3"
-                    color="primary"
-                    size="medium"
-                    rounded
-                    font-weight="medium"
-                    @click="() => $router.push({ name: 'TheRegister' })">
-                    Register
-                </BaseButton>
-            </BaseCard>
-            <BaseCard class="is-flex p-15 mx-4">
-                <BaseButton
-                    class="mx-3"
-                    color="primary"
-                    size="medium"
-                    rounded
-                    font-weight="medium"
-                    @click="() => $router.push({ name: 'TheForgotPassword' })">
-                    Forgot Password
-                </BaseButton>
-            </BaseCard>
-            <BaseCard class="is-flex p-15 mx-4">
-                <BaseButton
-                    class="mx-3"
-                    color="primary"
-                    size="medium"
-                    rounded
-                    font-weight="medium"
-                    @click="() => $router.push({ name: 'TheComponents' })">
-                    Components
-                </BaseButton>
-            </BaseCard>
-            <BaseCard class="is-flex p-15 mx-4">
-                <BaseButton
-                    class="mx-3"
-                    color="primary"
-                    size="medium"
-                    rounded
-                    font-weight="medium"
-                    @click="() => $router.push({ name: 'TheProducts' })">
-                    Products
-                </BaseButton>
-            </BaseCard>
+    <div class="home is-flex is-flex-direction-column is-align-items-center">
+        <div class="container">
+            <h5 class="is-size-5 has-text-weight-bold has-text-centered my-20 has-text-tertiary width-100">
+                Home
+            </h5>
+            <div class="links is-flex is-flex-grow-1 is-justify-content-space-between mt-16">
+                <BaseCard class="is-flex is-flex-grow-1 is-justify-content-center p-15 mx-4">
+                    <BaseButton
+                        class="mx-3"
+                        color="primary"
+                        size="medium"
+                        rounded
+                        font-weight="medium"
+                        :to="{ name: 'TheLogin' }">
+                        Login
+                    </BaseButton>
+                </BaseCard>
+                <BaseCard class="is-flex is-flex-grow-1 is-justify-content-center p-15 mx-4">
+                    <BaseButton
+                        class="mx-3"
+                        color="primary"
+                        size="medium"
+                        rounded
+                        font-weight="medium"
+                        :to="{ name: 'TheRegister' }">
+                        Register
+                    </BaseButton>
+                </BaseCard>
+                <BaseCard class="is-flex is-flex-grow-1 is-justify-content-center p-15 mx-4">
+                    <BaseButton
+                        class="mx-3"
+                        color="primary"
+                        size="medium"
+                        rounded
+                        font-weight="medium"
+                        :to="{ name: 'TheForgotPassword' }">
+                        Forgot Password
+                    </BaseButton>
+                </BaseCard>
+            </div>
         </div>
     </div>
 </template>
@@ -75,3 +55,11 @@
         }
     };
 </script>
+
+<style lang="scss" scoped>
+    .home {
+        .container {
+            width: 100% !important;
+        }
+    }
+</style>

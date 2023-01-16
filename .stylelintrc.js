@@ -37,6 +37,7 @@ module.exports = {
                     ':export',
                     'v-deep',
                     ':deep',
+                    '::deep'
                 ]
             }
         ],

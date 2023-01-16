@@ -15,7 +15,8 @@
                 'is-circle': circle,
             }
         ]"
-        :disabled="disabled">
+        :disabled="disabled"
+        @click="onClickButtonDo">
         <span v-if="iconLeft" class="icon" :class="[iconSizeClass]">
             <Icon :class="colorClass" :icon="iconLeft" />
         </span>
@@ -36,6 +37,7 @@ import {
     sizeValidator as propUtilsSizeValidator,
     fontWeightValidator as propUtilsFontWeightValidator,
 } from '@/utils/propValidators';
+import { useRouter } from 'vue-router';
 
 export default {
     name: 'BaseButton',
@@ -102,10 +104,17 @@ export default {
         circle: {
             type: Boolean,
             default: false
+        },
+        to: {
+            type: Object,
+            default: null
         }
     },
-    setup( props ) {
-        const { color, size, fontWeight, iconSize } = toRefs( props );
+    emits: [ 'click' ],
+    setup( props, { emit } ) {
+        const { color, size, fontWeight, iconSize, to } = toRefs( props );
+        const router = useRouter();
+
         const colorClass = computed( () => {
             return propUtilsButtonColorValidator( color.value ) ? `is-${color.value}` : 'is-default';
         } );
@@ -119,11 +128,20 @@ export default {
             return propUtilsSizeValidator( iconSize.value ) ?  `is-${iconSize.value}` : 'is-normal';
         } );
 
+        const onClickButtonDo = function( e ) {
+            emit( 'click', e );
+            
+            if ( to.value ) {
+                router.push( to.value );
+            }
+        };
+
         return {
             colorClass,
             sizeClass,
             fontWeightClass,
-            iconSizeClass
+            iconSizeClass,
+            onClickButtonDo
         };
     }
 };

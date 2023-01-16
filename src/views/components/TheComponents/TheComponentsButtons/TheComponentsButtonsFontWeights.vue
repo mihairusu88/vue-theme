@@ -5,7 +5,7 @@
                 <div class="columns is-flex-wrap-wrap">
                     <div v-for="( fontWeight, index ) in fontWeightValues"
                         :key="index"
-                        class="column is-flex is-justify-content-center">
+                        class="column is-flex is-flex-grow-0 is-justify-content-center">
                         <BaseButton
                             class="mx-3"
                             color="primary"

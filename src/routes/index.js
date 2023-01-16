@@ -5,6 +5,8 @@ const TheRegister = () => import( '@/views/register/TheRegister.vue' );
 const TheForgotPassword = () => import( '@/views/forgot-password/TheForgotPassword.vue' );
 const TheComponents = () => import( '@/views/components/TheComponents.vue' );
 const TheProducts = () => import( '@/views/products/TheProducts.vue' );
+const TheCart = () => import( '@/views/cart/TheCart.vue' );
+const TheFavorites = () => import( '@/views/favorites/TheFavorites.vue' );
 const TheNotFound = () => import( '@/views/not-found/TheNotFound.vue' );
 
 export default [
@@ -14,7 +16,7 @@ export default [
         component: TheHome,
         meta: {
             title: 'Tricker',
-            layout: 'withSidebar',
+            layout: 'withMainMenu',
             isPublic: true,
         }
     },
@@ -54,7 +56,7 @@ export default [
         component: TheComponents,
         meta: {
             title: 'Tricker',
-            layout: 'withSidebar',
+            layout: 'withMainMenu',
             isPublic: true,
         }
     },
@@ -64,7 +66,27 @@ export default [
         component: TheProducts,
         meta: {
             title: 'Tricker',
-            layout: 'withSidebar',
+            layout: 'withMainMenu',
+            isPublic: true,
+        }
+    },
+    {
+        path: '/cart',
+        name: 'TheCart',
+        component: TheCart,
+        meta: {
+            title: 'Tricker',
+            layout: 'withMainMenu',
+            isPublic: true,
+        }
+    },
+    {
+        path: '/favorites',
+        name: 'TheFavorites',
+        component: TheFavorites,
+        meta: {
+            title: 'Tricker',
+            layout: 'withMainMenu',
             isPublic: true,
         }
     },

@@ -2,7 +2,7 @@
     <div class="components-buttons-basic is-flex is-flex-direction-column is-justify-content-center">
         <div class="p-5 is-flex is-justify-content-center">
             <div class="columns is-flex-wrap-wrap">
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -12,7 +12,7 @@
                         Icon Left
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -22,7 +22,7 @@
                         Icon Right
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -33,7 +33,7 @@
                         Light Icon Left
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -44,7 +44,7 @@
                         Light Icon Right
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -55,7 +55,7 @@
                         Outlined Icon Left
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -66,7 +66,7 @@
                         Outlined Icon Right
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -75,7 +75,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -85,7 +85,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -95,7 +95,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -105,7 +105,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -116,7 +116,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -127,7 +127,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -137,7 +137,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"
@@ -148,7 +148,7 @@
                         <Icon icon="mdi:layers-triple" />
                     </BaseButton>
                 </div>
-                <div class="column is-flex is-justify-content-center">
+                <div class="column is-flex is-flex-grow-0 is-justify-content-center">
                     <BaseButton
                         class="mx-3"
                         color="primary"

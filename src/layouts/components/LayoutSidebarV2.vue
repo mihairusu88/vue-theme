@@ -99,16 +99,6 @@ export default {
                 label: 'Forgot Password',
                 icon: 'mdi:account-key-outline',
                 to: { name: 'TheForgotPassword' }
-            },
-            {
-                label: 'Components',
-                icon: 'mdi:video-input-component',
-                to: { name: 'TheComponents' }
-            },
-            {
-                label: 'Products',
-                icon: 'mdi:basket-outline',
-                to: { name: 'TheProducts' }
             }
         ] );
 

@@ -1,21 +1,23 @@
 <template>
     <div ref="components" class="components is-flex is-flex-direction-column is-justify-content-center px-8">
-        <BaseCard class="components__filter is-flex is-align-items-center is-justify-content-center p-5">
-            <BaseButton v-for="(componentItem, index) in componentList"
-                :key="index"
-                class="mx-3"
-                color="primary"
-                size="normal"
-                font-weight="bold"
-                rounded
-                outlined
-                @click="onClickFilterButtonDo(index)">
-                {{ componentItem }}
-            </BaseButton>
-        </BaseCard>
-        <TheComponentsButtons id="buttons" />
-        <TheComponentsInputs id="inputs" />
-        <TheComponentsCards id="cards" />
+        <div class="container">
+            <BaseCard class="components__filter is-flex is-align-items-center is-justify-content-center p-5">
+                <BaseButton v-for="(componentItem, index) in componentList"
+                    :key="index"
+                    class="mx-3"
+                    color="primary"
+                    size="normal"
+                    font-weight="bold"
+                    rounded
+                    outlined
+                    @click="onClickFilterButtonDo(index)">
+                    {{ componentItem }}
+                </BaseButton>
+            </BaseCard>
+            <TheComponentsButtons id="buttons" />
+            <TheComponentsInputs id="inputs" />
+            <TheComponentsCards id="cards" />
+        </div>
     </div>
 </template>
 
