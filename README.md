@@ -29,6 +29,8 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://vitejs.dev/config/).
-### Check live demo
+### Check live demo on netlify
 
-[Live Demo](https://master--fancy-khapse-1ac560.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3cf0a387-9efe-4e23-bcc0-e5f54a849a3b/deploy-status?branch=master)](https://app.netlify.com/sites/vue3-theme/deploys)
+
+[Live Demo](https://vue3-theme.netlify.app/)
